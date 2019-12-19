@@ -17,7 +17,7 @@ class Croper:
 				out.write(req.content)
 			print(f"\n\033[92msuccess: {rana}-rmbg.png\033[0m")
 		else:
-			print(f"\n\033[91mError: {response.status_code} {response.text}\033[0m")
+			print(f"\n\033[91mError: {req.status_code} {req.text}\033[0m")
 
 	def cropbgurl(self, imgurl, bg_color):
 		req=requests.post('https://api.remove.bg/v1.0/removebg',
@@ -31,7 +31,7 @@ class Croper:
 				out.write(req.content)
 			print(f"\n\033[92msuccess: {rana}-rmbg.png\033[0m")
 		else:
-			print(f"\n\033[91mError: {response.status_code} {response.text}\033[0m")
+			print(f"\n\033[91mError: {req.status_code} {req.text}\033[0m")
 
 try:
 	
